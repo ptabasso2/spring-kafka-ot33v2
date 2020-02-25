@@ -19,7 +19,7 @@ Create a Topic (First time)
 Start Zookeeper
 
 `COMP10619:Kafka pejman.tabassomi$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
-`
+
 Start kafka server
 
 `COMP10619:Kafka pejman.tabassomi$ kafka-server-start /usr/local/etc/kafka/server.properties`
@@ -36,7 +36,7 @@ Check if data is landing in kafka
 **_Spin up the Datadog Agent (Provide your API key  to the  belown command_** 
 
 
-docker run -d --name datadog_agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 127.0.0.1:8126:8126/tcp -e DD_API_KEY=<Your API key> -e DD_APM_ENABLED=true -e DD_APM_IGNORE_RESOURCES="GET /api/random" datadog/agent:latest
+docker run -d --name datadog_agent -v /var/run/docker.sock:/var/run/docker.sock:ro -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -p 127.0.0.1:8126:8126/tcp -e DD_API_KEY=<Your API key> -e DD_APM_ENABLED=true -e DD_APM_IGNORE_RESOURCES="GET /api/random" datadog/agent:latest`
 
 
 **_Start the spring boot app_**
