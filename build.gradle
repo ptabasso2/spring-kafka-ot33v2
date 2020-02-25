@@ -24,7 +24,8 @@ dependencies {
     compile 'org.springframework.kafka:spring-kafka:2.2.0.RELEASE'
     compile group: 'io.opentracing.contrib', name: 'opentracing-kafka-spring', version: "0.1.8"
     compile group: 'com.datadoghq', name: 'dd-trace-ot', version: "0.37.0"
-    //compile group: 'org.projectlombok', name: 'lombok', version: "0.10.1"
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
     //compile group: 'io.jaegertracing', name: 'jaeger-client', version: '0.31.0'
     //compile group: 'io.jaegertracing', name: 'jaeger-client', version: '0.35.2'
 }

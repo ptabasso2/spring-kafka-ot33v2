@@ -18,7 +18,7 @@ Create a Topic (First time)
 
 Start Zookeeper
 
-`COMP10619:Kafka pejman.tabassomi$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
+`COMP10619:Kafka pejman.tabassomi$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties`
 
 Start kafka server
 
