@@ -9,6 +9,14 @@ Install Kafka on mac OSX (High Sierra)
 
 `COMP10619:Kafka pejman.tabassomi$ brew install kafka`
 
+Start Zookeeper
+
+`COMP10619:Kafka pejman.tabassomi$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties`
+
+Start kafka server
+
+`COMP10619:Kafka pejman.tabassomi$ kafka-server-start /usr/local/etc/kafka/server.properties`
+
 Create a Topic (First time)
 
 `COMP10619:Kafka pejman.tabassomi$ kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic users`

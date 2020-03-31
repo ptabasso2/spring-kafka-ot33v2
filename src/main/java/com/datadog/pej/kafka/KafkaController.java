@@ -2,7 +2,6 @@ package com.datadog.pej.kafka;
 
 import com.datadog.pej.kafka.consumer.Receiver;
 import com.datadog.pej.kafka.producer.Sender;
-//import datadog.trace.api.DDTags;
 import datadog.trace.api.DDTags;
 import io.opentracing.Scope;
 import io.opentracing.ScopeManager;
